@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Flickr bild</title>
+		<meta name="author" content="Mohammad Amin">
+        <meta name="description" content="Bildgalleri med bilder hämtade frånflickr">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, target-densitydpi=medium-dpi, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="apple-mobile-web-app-title" content="Flickr bildgallery">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <link rel="stylesheet" href="css/imageGallary.css">
+        <script src="js/gallery.js"></script>
+        <script src="js/gallery.config.js"></script>
+        <script src="js/flickr.js"></script>
+        <script src="js/gallery.cmd.js"></script>
+        <script src="js/gallery.app.js"></script>
+        <script src="js/gallery.app.photo.js"></script>
+        <script src="js/gallery.app.photo.showSinglePhoto.js"></script>
+        <script src="js/gallery.app.photo.drawPhoto.js"></script>
+        <script src="js/gallery.app.photo.getAndStorePhotoMetadata.js"></script>
+        <script src="js/gallery.app.photo.sortPhotos.js"></script>
+        <script src="js/gallery.app.photo.loadPhotoBySize.js"></script>
+    </head>
+    <body onload="gallery.app()">
+        <div id="maindiv">
+            <div class="header">
+                <div style="display: table-cell;vertical-align: middle;">
+                    <h style="display: inline-block;float:left;">Flickr bildgalleri</h>
+                    <button style="display: inline-block;float:right;" id="smallPhoto" type="button">S</button>
+                    <button style="display: inline-block;float:right;" id="mediumPhoto" type="button">M</button>
+                    <button style="display: inline-block;float:right;" id="largePhoto" type="button">L</button>
+                </div>
+            </div>
+            <div id="photoContainer"></div>
+            <script type="text/javascript"></script>
+    </body>
+</html>
